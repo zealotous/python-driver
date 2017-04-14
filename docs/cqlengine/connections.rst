@@ -14,7 +14,7 @@ To use cqlengine, you need at least a default connection. If you initialize cqle
 
         from cassandra.cqlengine import connection
 
-        connection.setup(['127.0.0.1')
+        connection.setup(['127.0.0.1'])
         connection.register_connection('cluster2', ['127.0.0.2'])
 
 :func:`~.connection.register_connection` can take a list of hosts, as shown above, in which case it will create a connection with a new session. It can also take a `session` argument if you've already created a session:
